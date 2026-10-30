@@ -1,34 +1,39 @@
 {
-	"schemaVersion": 1,
-	"id": "krysak-garden-presets",
-	"version": "${version}",
-	"name": "Krysak Garden Presets",
-	"description": "Save, organize and reload camera angles (Yaw/Pitch) for your farms with a clean in-game menu.",
-	"authors": [
-		"ZlejKrysak"
-	],
-	"license": "MIT",
-	"icon": "assets/krysak-garden-presets/icon.png",
-	"environment": "client",
-	"entrypoints": {
-		"main": [
-			"cz.krysak.gardenpresets.KrysakGardenPresets"
-		],
-		"client": [
-			"cz.krysak.gardenpresets.client.KrysakGardenPresetsClient"
-		]
-	},
-	"mixins": [
-		"krysak-garden-presets.mixins.json",
-		{
-			"config": "krysak-garden-presets.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.0",
-		"minecraft": "~26.1.2",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+    "schemaVersion": 1,
+    "id": "krysak-garden-presets",
+    "version": "${version}",
+    "name": "Krysak Garden Presets",
+    "description": "Save, organize and reload camera angles (Yaw/Pitch) for your farms with a clean in-game menu.",
+    "authors": [
+       "ZlejKrysak"
+    ],
+    "contact": {
+       "homepage": "https://modrinth.com/mod/krysak-garden-presets",
+       "sources": "https://github.com/ZlejKrysak/krysak-garden-presets",
+       "issues": "https://github.com/ZlejKrysak/krysak-garden-presets/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/krysak-garden-presets/icon.png",
+    "environment": "client",
+    "entrypoints": {
+       "main": [
+          "cz.krysak.gardenpresets.KrysakGardenPresets"
+       ],
+       "client": [
+          "cz.krysak.gardenpresets.client.KrysakGardenPresetsClient"
+       ]
+    },
+    "mixins": [
+       "krysak-garden-presets.mixins.json",
+       {
+          "config": "krysak-garden-presets.client.mixins.json",
+          "environment": "client"
+       }
+    ],
+    "depends": {
+       "fabricloader": ">=0.19.0",
+       "minecraft": "~26.1.2",
+       "java": ">=25",
+       "fabric-api": "*"
+    }
 }
